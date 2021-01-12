@@ -59,8 +59,12 @@
   position: absolute;
   font-weight: bold;
   color: black;
-  top: 608px;
+  top: 610px;
   left: 400px;
+}
+
+#item1 p {
+  font-size: 8px;
 }
 
 #item1 h1 {
@@ -74,12 +78,12 @@
   position: absolute;
   font-weight: bold;
   color: white;
-  top: 608px;
+  top: 610px;
   left: 1220px;
 }
 
 .card {
-  width: 800px;
+  width: 100%;
   height: 400px;
   background-color: black;
   padding: 200px 300px 10px; /* 上20px 左右12px 下10px */
@@ -119,6 +123,7 @@
   margin: 0 auto;
   z-index: 10;
 }
+
 
 #about{
   width: 100%;
@@ -170,7 +175,6 @@
 .smoke{
   display: block;
   margin-right: auto;
-  height: 450px;
 }
 
 #company {
@@ -322,4 +326,168 @@
   line-height: 80px;
   background: black;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+#hamburger {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 100;
+  top: 15px;
+  right: 20px;
+  transition: 0.4s;
+}
+
+#hamburger span {
+  position: absolute;
+  left: 2px;
+  display: block;
+  width: 35px;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.8s;
+}
+
+#hamburger span:nth-of-type(1) {
+  top: 10px; /* ハンバーガーメニューの1本目の棒 */
+}
+
+#hamburger span:nth-of-type(2) {
+  top: 20px; /* ハンバーガーメニューの2本目の棒 */
+}
+
+#hamburger span:nth-of-type(3) {
+  top: 30px; /* ハンバーガーメニューの3本目の棒 */
+}
+
+.header-nav {
+  display: none; /* デスクトップのナビを消す */
+}
+
+  .about-card-right,
+  .about-card-left {
+      flex-wrap: wrap;
+     padding: 0px;
+     width: 50%;
+     height: 300px;
+     display: block;
+  }
+
+
+
+  .about-wrap {
+    flex-wrap: wrap;
+  }
+
+#about .button{
+margin: 0 auto;
+}
+
+  .camera,
+  .smoke {
+    flex-wrap: wrap;
+    margin: auto;
+   display: block;
+   flex-direction: column;
+  }
+
+  .card {
+    flex-wrap: wrap;
+    width: 100%;
+   padding: 0%;
+  }
+
+  .title {
+    flex-wrap: wrap;
+   padding: 20px 40px 10px;
+  }
+
+  .text {
+  flex-wrap: wrap;
+  padding: 20px 40px 10px;
+  }
+
+  .mission-img img{
+  top: 1000px;
+  }
+
+  .batton {
+  background-color: white;
+  margin-left: 30px;
+  top: 50px;
+  z-index: 30;
+  }
+
+  #about {
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  #eyecatch {
+  flex-wrap: wrap;
+  }
+
+  #eyecatch p {
+    margin-left: 50px;
+  }
+
+  #item1 {
+    width: 70%;
+    left: 8px;
+  }
+
+  #item1 h1 {
+    top: 0%;
+  }
+
+  #items {
+   width: 25%;
+   left: 270px;
+   text-align: center;
+  }
+
+  .business-cat {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .parent {
+    flex-wrap: wrap;
+  }
+
+
+
+  label {
+    display: block;
+  }
+
+  #company {
+     margin: 0 auto;
+  }
+
+  #recruit {
+    margin: 0 auto;
+  }
+
+  #FAQ {
+    flex-wrap: wrap;
+    width: 80%;
+     margin: 0 auto;
+  }
+
+  .form div {
+    margin: 0 auto;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  input,textarea {
+    width: 100%;
+  }
+
 }
