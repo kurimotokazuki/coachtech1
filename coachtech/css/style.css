@@ -44,7 +44,7 @@
   position: absolute;
   top: 50%;
   left: 30%;
-  transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
   font-size: 50px;
   font-style: italic;
   font-weight: bold;
@@ -60,7 +60,7 @@
   font-weight: bold;
   color: black;
   top: 610px;
-  left: 400px;
+  left: 450px;
 }
 
 #item1 p {
@@ -79,7 +79,7 @@
   font-weight: bold;
   color: white;
   top: 610px;
-  left: 1220px;
+  left: 1230px;
 }
 
 .card {
@@ -128,33 +128,30 @@
 #about{
   width: 100%;
   margin-top: 200px;
+  margin-bottom: 10%;
   background: rgb(192, 189, 189);
 }
 
-#about img{
-  width: 50%;
-}
+
 
 #about h2{
   text-align: center;
+   padding: 20px 0;
 }
 
 .about-wrap{
   position: relative;
-  padding-bottom: 200px;
+   margin-bottom: 10%;
 }
 
 .about-card-left, .about-card-right{
   position: absolute;
-  top: 10%;
-  width: 40%;
-  padding: 50px;
+  top: 15%;
+  left: 20%;
   background: #fff;
-  color: #000;
-}
-
-.about-card-right{
-  right: 40%;
+  width: 40%;
+  padding: 5% 5%;
+  box-sizing: border-box;
 }
 
 .about-card-left{
@@ -163,18 +160,23 @@
 
 #about .button{
   padding: 10px 20px;
-  margin-left: 400px;
+  margin-left: 250px;
   background: #fff;
   color: #000;
 }
 
-.camera{
+img {
   display: block;
-  margin-left: auto;
 }
+
+.camera{
+  width: 50%;
+  margin-left: 50%;
+}
+
 .smoke{
-  display: block;
-  margin-right: auto;
+  width: 50%;
+  margin: 0 50% 0 0;
 }
 
 #company {
@@ -328,6 +330,14 @@
   color: white;
 }
 
+.footer-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 35px;
+  color: #f2f2f2;
+  line-height: 50px;
+}
+
 @media screen and (max-width: 768px) {
 #hamburger {
   width: 40px;
@@ -368,17 +378,16 @@
 
   .about-card-right,
   .about-card-left {
-      flex-wrap: wrap;
-     padding: 0px;
-     width: 50%;
-     height: 300px;
-     display: block;
+   width: 90%;
+  position: static;
+  margin: 0 5%;
   }
 
 
 
   .about-wrap {
     flex-wrap: wrap;
+    position: static;
   }
 
 #about .button{
@@ -387,10 +396,9 @@ margin: 0 auto;
 
   .camera,
   .smoke {
-    flex-wrap: wrap;
-    margin: auto;
-   display: block;
-   flex-direction: column;
+     width: 90%;
+ margin: 0 5%;
+ padding: 0;
   }
 
   .card {
@@ -431,12 +439,13 @@ margin: 0 auto;
   }
 
   #eyecatch p {
-    margin-left: 50px;
+  text-align: center;
+  transform: translate(-20%, -100%);
   }
 
   #item1 {
     width: 70%;
-    left: 8px;
+   left: 10px;
   }
 
   #item1 h1 {
@@ -476,6 +485,7 @@ margin: 0 auto;
     flex-wrap: wrap;
     width: 80%;
      margin: 0 auto;
+     margin-bottom: 5%;
   }
 
   .form div {
@@ -485,6 +495,13 @@ margin: 0 auto;
   .footer {
     text-align: center;
   }
+
+ .footer-logo {
+   margin: 0 auto;
+  text-align: center;
+  top: 60%;
+  left: 40%;
+ }
 
   input,textarea {
     width: 100%;
